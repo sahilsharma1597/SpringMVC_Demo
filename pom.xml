@@ -7,7 +7,7 @@
 	<groupId>com.javaspringclub</groupId>
 	<artifactId>SpringMVC_Demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>SpringMVC_Demo</name>
 	<url>http://maven.apache.org</url>
