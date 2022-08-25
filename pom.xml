@@ -7,7 +7,7 @@
 	<groupId>com.javaspringclub</groupId>
 	<artifactId>SpringMVC_Demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>SpringMVC_Demo</name>
 	<url>http://maven.apache.org</url>
@@ -69,6 +69,13 @@
 			<version>2.1</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<version>3.2.2</version>
+		</dependency>
+
 	</dependencies>
 
 	<repositories>
@@ -91,14 +98,15 @@
 				</configuration>
 			</plugin>
 			<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-war-plugin</artifactId>
-						<configuration>
-							<outputDirectory>webapps</outputDirectory>
-							<warName>ROOT</warName>
-						</configuration>
-						<version>3.3.1</version>
-					</plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<outputDirectory>webapps</outputDirectory>
+					<warName>ROOT</warName>
+				</configuration>
+				<version>3.3.1</version>
+			</plugin>
+
 		</plugins>
 	</build>
 	<profiles>
